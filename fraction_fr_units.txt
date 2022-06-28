@@ -1,0 +1,43 @@
+utk fr atau fraction akan di aplikasikan ke grid baik utu columns
+atau rows dan ingat skli lagi rows tingginya harus di buat dulu  agar 
+dapat bekerja sesuai jika mau ada penggunaan auto units
+nah utk fraction adalah mejadi pembgian ruang dgn ukuran frame2 yg sama besar 
+misalkan  
+grid_template_columns:1fr 1fr ( maka akan terbagi 2 bagian yg sama colnya )
+grid_template_columns:1fr 1fr 1fr ( maka akan terbagi 3 bagian yg sama colnya )
+grid_template_columns:1fr 1fr  4fr 1fr ( maka col 3 akan 4x lebih besar dari col yg lain  )
+grid_template_columns:5fr 1fr ( maka akan terbagi 2 bagian yg sama col 1 5x lebih besr dari yg lain  )
+diatas berlaku juga ytk rows nya !
+utk case berikut bagaimana? kita selama ini ada contoh 7 cells  nah kalau gini gimana ?
+
+grid_template_columns: 1fr 5fr 3 fr 3fr 
+grid_tempalte_rows: 1fr 1fr 1fr 
+nah diatas :
+jawab: col-2 5x besar col yg lain dan col 3 dan 4 akan 3x besar dari col-1
+nah utk rows yg tersii akan ada 2 rows saja tetapi bagian 
+rows terakhir besaarnya sama masih kosong karen kita punaya hanya 7 cell saja !
+
+contoh case lagi:
+.container {
+  border: 5px solid black;
+
+  /* nah step ke 2 di container kita seting displya  dan columns sbb */
+  display: grid;
+  /* height: wajib diset dulu agat auto pada rows bisa aktif !  */
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 4fr 2fr;
+  grid-template-rows: 2fr 1fr 3fr;
+}
+nah pada contoh diatas maka col 4 smua fractional mmbagi wilyah pada lebar dari page 
+html jika html di lebar atau dikecilkan composisi dari fr2 masing2 tetap sama 
+yaitu col 3: 4x lebih besar dari col 1 & col 2 
+      dan col 4 ,2x lebih besar dari col 1 & col 2 
+      jadi akan tetap sama perbandingan walaupn dibesar kecilkjan layar htmlnya 
+
+      ukt baris tentunya baris 1 dan baris 2 akan terisi oleh cell 
+      baris 1 sudah penuh hnya 4 cell sja, bris 2 berisi 3 cell  
+      baris-3 dan 4 tidak ada kosong tetapi fractional dari 
+      pembagian baris tinggi baris masih terlihat dimana tinggi baris 1 > 2x dri baris 2 
+      dan baris 3 yg kosong >3x dari baris 2.
+      jadi speti inilah fractional atau fr 
+      
