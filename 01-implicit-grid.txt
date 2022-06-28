@@ -1,0 +1,19 @@
+//ini keterangan dari course grid 
+jadi intinya jika layout grid sudah smart jika kita buat 
+grid-template-columns sbayak 1 col mislakan maka smua cell1-1,cell-2 
+atau ada cell sd cell-10 yg kita buat di html tsb 
+akan ikut aturan ini jadi cell1,cell2,cel3,cell4 ...cell-10 akan tersusun 
+rapi 1 column ke bawah 
+
+bagiaman jika kita buat hanya 3 colum ,sama! maka mis 
+grid-template-columns : 200px 200px 200px maka akan sama 
+jadi mis kia mau buaat 7 cell colum maka akan urut sbb 
+cell-1  cell-2  cell-3 ruang-kosong 
+cell-4  cell-5   cell-6 ruang-kosong
+cell-7  
+jadi akan urut kekanan maks 3 column sltahnya cell anak akan tempati barus
+berikutnya sd 3 column dan jika ada lebih akan tempati baris berikutnya dari kiri 
+kekanan!
+inilah yg disebut implicite-grid otomatis dgn sndirinya cell ngikuti 
+column dan ngisi sesuai grid cilumn cetakanya !
+
