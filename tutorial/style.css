@@ -1,0 +1,40 @@
+/* reset dulu  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #222;
+}
+
+/* container adaah wraper ruang utk anak2 cell dibawah nya 
+   hanya punya border 1px solid
+   JADI INTINYA SYARAT GRID ADALAH HARUS AdA CONTAINER DAN CHILDREL/CELL
+ */
+.container {
+  border: 5px solid black;
+
+  /* nah step ke 2 di container kita seting displya  dan columns sbb */
+  display: grid;
+  /* mmbuat template column berpa column dan besarnya mis 300px 200px  
+  maka akan urut cell1 `300px  cekk2  200px jika layar lebar merkea fix di situ sisa
+  layar lebar area koosng sblah kanan  = 1621.5px - 300+200 
+  */
+  grid-template-columns: 200px 300px;
+}
+
+/* utk cell dia wraper ke cell-* dibawahnya  
+pembungkus dgn border orange
+*/
+.cell {
+  padding: 2rem;
+  background: #dedede;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  border: 3px solid red;
+  color: #000;
+}
