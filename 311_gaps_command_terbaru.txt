@@ -1,0 +1,6 @@
+commadn gap terbaru yg dipakai di css sekarnga adalah :
+column-gap:20px;  -->utk col 
+row-gap:11px ;--utk row aja 
+gap:5px 40px ---> tuk row gap:5px dan col gap:40 px 
+gap:7px ---> utk both row& col punya gap ygsama besar 7px ;
+
