@@ -1,0 +1,13 @@
+di grids ada gap baik itu column gap atau row gaps 
+nah apa gaps itu gaps adalah mmnnuat jarak antar column atau antar baris 
+jadi kita buat ruang kosong /sekat diantara col dan rows kita yg sudah brisi 
+konten jadi putih smua  itulah gaps
+nah besar gaps ini bisa ditentukan pakai px 
+nah berikut commandnya:
+gid-column-gap: 20px -->mmberi gap antar smua col sbsar 20px 
+
+grid-row-gap:15px --: mmberi gap pada smua baris row sbesar 15 px 
+utk shorctut jika hanya ditulis 1 kali maka itu utk col dan rows 
+contoh: grip-gap:8px // 
+jika ditulis 2x maka yg pertama utk rows gaps  dan yg kedua utk col gap 
+contoh:grig-gap : 16px 40px ;
