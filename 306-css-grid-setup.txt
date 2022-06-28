@@ -16,7 +16,7 @@ di html tinggal tambah spasi saja sbb:
 
 di css tinggal buat className dan background warnaya 
 .cell-1 {
-    color:
+    color:#581f18;
 }
 .cell-1 {
     color:

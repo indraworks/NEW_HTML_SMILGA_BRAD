@@ -1,0 +1,7 @@
+utk ukuran units itu ngarah ke yg namanya rows
+nah utk column sendiri bisa dgn px,rem,% atau em dan trakhir adalah fr 
+atau frame ini yg comon paling banyak di pakai
+
+
+
+
