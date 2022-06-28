@@ -1,0 +1,27 @@
+
+jadi kita mau buat supaya cell2 kita ini ada colornya 
+utk itu kita buat cell-1 && cell-5 class css tetap di wraping oleh class css jadi 
+di html tinggal tambah spasi saja sbb:
+
+<body>
+  <div className="container">
+    <div className="cell cell-1"> </div> 
+    <div className="cell cell-2"> </div> 
+    <div className="cell cell-3"> </div> 
+    <div className="cell cell-4"> </div> 
+    <div className="cell cell-5"> </div> 
+   
+  </div>
+</body>
+
+di css tinggal buat className dan background warnaya 
+.cell-1 {
+    color:
+}
+.cell-1 {
+    color:
+}
+.cell-1 {
+    color:
+}
+..dtst sampai 5 sama !
