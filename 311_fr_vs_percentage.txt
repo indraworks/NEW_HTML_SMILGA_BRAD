@@ -1,0 +1,27 @@
+sekarang begini kita tahu bahwa 
+utk gap adalah absolute misal padamsalah ini 
+ada case :
+.container {
+    display:grid;
+    min-height:100vh;
+    grid_template_columns:200px 300px 76px 150px;
+    grid_tempalte_rows:1fr 2fr 1fr;
+    gap-gap:50px 100px;
+}
+contoh case :
+grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap:50px 100px;
+   nah kalau 100px ini pasti abosulute pokonnya gap absolute yg 
+   masalah jika kita milih persen masih bagus tapi kurang akurate 
+   sebab ruangnya mentok 
+   tapi jika kita pilih fr maka akan menyesuiakan ketika dikecilkan 
+   masih lebih presisi utk itu sebaiknya pilih fr! 
+   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap:50px 100px;
+  kesimpulan:
+  grid-template-columns: 50% 50%; /* hasil tidak ok nyangkut   */
+  grid-template-columns: 1fr 1fr ; /*hasil ok tidak nyangkut ikut layar */
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 50px 100px; /* case utk fr vs % pilihlah  */
