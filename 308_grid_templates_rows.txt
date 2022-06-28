@@ -1,0 +1,24 @@
+
+sma persis dgn grid_template_columns nah ada grade_template_rows
+yg atur ketinggian dari row2 /abris yg kita setup nah ada yg menarik
+utk auto mis 
+grid_template_columns: 200px 100px auto  ( ingat dgn auto maka otomatis sisany diambil oleh col 3 utk semua sisa colum penuhi lebahr layar )
+
+grid_template_rows: 200px 150px auto 
+nah yg aneh kok baris 3 tidak ada perubahan kok autonya gak ocupired smua sampau ke dasar 
+maksudnya si baris 3 ini meng-ocupired smua sisa tinggi layar html  
+tidak bisa! sebab why?karena kita harus terlebh dulu seth vertical hightnya dari layar thml 
+di bagian wraper/containernya sbb:
+container {
+    height: 100vh; /* artinya kita set tinggi container 100% sama tinggi dgn layer html 
+
+}
+
+nah dgn diset tsb jila kita buat 
+grid_tempalte_rows : 200px 150px auto otomtis ada 3 baris ,baris ke =-3 akan ocupied sluruh tinggi layar html 
+bagaiamn jika begini :
+grid_tempalte_rows : auto  150px auto 
+akan mengisi tinggi dgn tinggi maklayer -150px = sisa /2 utk atas bawah  dgn tinggi yg sama 
+pada  baris 1 dan 3 nya 
+demikianlah pembahasan utk grid_tempalte_rows yg mana auto utk rows/baris akan bisa jaan apabila
+diset dulu  containernya !

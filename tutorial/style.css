@@ -19,32 +19,10 @@ body {
 
   /* nah step ke 2 di container kita seting displya  dan columns sbb */
   display: grid;
-  /* mmbuat template column berpa column dan besarnya mis 300px 200px  
-  maka akan urut cell1 `300px  cekk2  200px jika layar lebar merkea fix di situ sisa
-  layar lebar area koosng sblah kanan  = 1621.5px - 300+200 
-  */
-  /* grid-template-columns: 200px 300px; */
-  /* pmbuatan ukuran unit pada col bisa px,rem ,em ,% dan fr, sbb contoh di bawah */
-  /* jika saya isi 100% maka hasilnya 1607px alias akan penuh isi kekanan yg kosong 
-   jadi 5% kira2 80.3%  jadi kesimpulan nilai persen yg akan diisi oleh column adalah 
-   sisa dari laman kosong sebelah kanan yg belum diisi di baris/row yg sama!
-   stlahnya di akan turun kebawah 
-   itu kalau ngisi paling kanan kalau ngisi di no 2 mis ini ada 4 col gimana?
-
-  */
-  /* grid-template-columns: 200px 4rem 3em 100%;  akan tetap sama yaitu sisa ruang 
-      dari besar_layar - gridCol1,gridCol3,gridCol4 = gridCol2 ( jika 100%)
-      karena % diambil dari sisa ruang yg belum dipakai pada lebar layar html!
-
-  */
-  /* Pemilihan auto gimana ? ya utk auto dia akan sangat flexible 
-   jika kita mengunakan auto maka otomatis dia sesuaikan besarnya sisa dari 
-   lebar layer yg belum dipakai sbgi colum  contoh 
-   kita punya 3 colum yg trakhir auto 
-   grid-template-columns: 200px 7rem auto 
-   maka otomtis si auto grid colum lebar akan smapi nutup kekanan
-  */
+  /* height: wajib diset dulu agat auto pada rows bisa aktif !  */
+  height: 100vh;
   grid-template-columns: 200px 7rem auto;
+  grid-template-rows: auto 140px auto;
 }
 
 /* utk cell dia wraper ke cell-* dibawahnya  
