@@ -15,33 +15,13 @@ body {
    JADI INTINYA SYARAT GRID ADALAH HARUS AdA CONTAINER DAN CHILDREL/CELL
  */
 .container {
-  border: 5px solid black;
-  margin: 10rem;
-
-  /* nah step ke 2 di container kita seting displya  dan columns sbb */
-  display: grid;
-  /* height: wajib diset dulu agat auto pada rows bisa aktif !  */
-  height: 100vh;
-  /* grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 1fr 1fr 1fr; */
-  /* kasih gap  cek di:310_gap.txt */
-  /* grid-gap: 10px 30px; gap row:10px col:20px   */
-  /* command terbaru tuk gap 
-  commadn gap terbaru yg dipakai di css sekarnga adalah :
-column-gap:20px;  -->utk col 
-row-gap:11px ;--utk row aja 
-gap:5px 40px ---> tuk row gap:5px dan col gap:40 px 
-gap:7px ---> utk both row& col punya gap ygsama besar 7px ;
- 
-  */
-  /* grid-template-columns: 50% 50%; hasil tidak ok nyangkut   */
-  grid-template-columns: 100px 100px 100px; /*hasil ok tidak nyangkut ikut layar */
-  grid-template-rows: 100px 100px 100px;
-  grid-gap: 1rem; /* case utk fr vs % pilihlah  */
+  border: 2px solid black;
 }
 
-/* utk cell dia wraper ke cell-* dibawahnya  
-pembungkus dgn border orange
+/* nah setelahnya kita baru berikan area2 tsb pada cell2 
+yg mau kita pilih mis utk "a" kita kasih ke cell-1 
+jadi urut baiknya ,kalau mau kasih cell-6 gak mslah tapi
+sbaiknya urut bagi permula yg sprti saya 
 */
 .cell {
   padding: 2rem;
@@ -53,30 +33,22 @@ pembungkus dgn border orange
   color: #fff;
 }
 
-/* coba gridline grid col start  -->grid col end  
- pada cell-1 
-*/
-
 .cell-1 {
   background: #581f18;
-  /* grid-column-start: 1;
-  /* grid-column-end: -1; */
-  /* grid-column-end: 4;  */
-  grid-column: 1/-1;
 }
 .cell-2 {
-  grid-row: 2/4;
   background: #f0a202;
 }
 .cell-3 {
   background: #d95d39;
 }
 .cell-4 {
-  /* grid-column-start: 1;
-  grid-column-end: -1; */
   background: #202c59;
 }
 .cell-5 {
   background: #51cb20;
+}
+.cell-6 {
+  background: grey;
 }
 /*  */
