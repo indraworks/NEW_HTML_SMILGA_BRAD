@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scle=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <title>Grid Tutorial</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Grid Tutorial</title>
+    <style>
+      /*
+      justify content untuk atur column!
+      jadi kalau col berarti mengatur kiri -kananya dan space2 yg ada dlm wraper/container.
+      Justify content makdsudnya gimana ini  utk mensetup
+      psosi2 col cel2 waktu kita gunakan grid
+      jadi mis
+      justify-content:start //maka smua content dari col cell2 trbngkus wraper cotnainer
+      ada di sebelah kiri  dari dlm counterner
+      justify contient :end //smua content col 1,2,3  dan bawahnya kalren implicit col
+                         akan ada di sebelah kanan dari baris
+      justify-content: space-evenly :akan ada space antar col bagi cell2 spanjang bidang lebar container yg terbagi sama rata smacam gap di col dan smua gap sama besarnya 
+
+      jsutify contnet :spape=around :akan ada space antar pingir dngn col 1,4 tepi kiri dan col,3,6,
+
+
+      */
+      .container {
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        /* row kita matikan  */
+
+        /* justify-content: flex-start; */
+        /* justify-content: flex-end; */
+        /* justify-content: space-around; */
+        /* justify-content: space-between; */
+        justify-content: space-evenly;
+      }
+
+      /* .cell-1 {
+        order: 3;
+      }
+      .cell-2 {
+        order: -2;
+      }
+      .cell-3 {
+        order: -5;
+      }
+      .cell-4 {
+        order: 2;
+      }
+      .cell-5 {
+        order: 1;
+      }
+      .cell-6 {
+        order: -3;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cell cell-1">cell-1</div>
+      <div class="cell cell-2">cell-2</div>
+      <div class="cell cell-3">cell-3</div>
+      <div class="cell cell-4">cell-4</div>
+      <div class="cell cell-5">cell-5</div>
+      <div class="cell cell-6">cell-6</div>
+    </div>
+  </body>
+</html>

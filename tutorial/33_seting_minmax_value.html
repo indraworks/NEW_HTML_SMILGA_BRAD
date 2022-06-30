@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scle=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <title>Grid Tutorial</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Grid Tutorial</title>
+    <style>
+      /* MINMAX VALUE maksudnya gimana ,jadi ini mirip sprti media query ketika layar dilebarkan dan dikecilkan 
+      jadi maksudnya minimun adalah minimum ukurna value apakan itu utk columnsnya atau rowsn pada saat dikecilkan dari arah tinggi pada arah kri kanan 
+      sebab kalau kita lihat column2 misalkan col1,col2,col3 dibesarkan dan kcilkan maka dia akan ikut
+      sama besar dan sama kcil nah msalkan kita mau col2 yg berisi cell-2 dan cell5 
+      apabila di kcilkan layarnya  dia tetap 400px ,minimun lebar col ttp 400px dan pada saat di besarkan 
+      dia ikut framnenya (sptti biasanya)
+      maka setingnya sbgai berikut utk col ke-2 
+      grid-template-columns:1fr minmax(400px,1fr) 1fr
+      bisa dilihat hasil pada gambar image/setting-minmax
+      
+
+      
+      */
+      .container {
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr minmax(400px, 1fr) 1fr;
+        grid-template-rows: repeat(2, 1fr);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cell cell-1">cell-1</div>
+      <div class="cell cell-2">cell-2</div>
+      <div class="cell cell-3">cell-3</div>
+      <div class="cell cell-4">cell-4</div>
+      <div class="cell cell-5">cell-5</div>
+      <div class="cell cell-6">cell-6</div>
+    </div>
+  </body>
+</html>

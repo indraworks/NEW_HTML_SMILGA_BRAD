@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scle=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <title>Grid Tutorial</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Grid Tutorial</title>
+    <style>
+      /* AUTO-FILL maksudnya apa?
+      auto-fill MENGISI baris dengan kolom sebanyak mungkin. Jadi itu membuat kolom implisit setiap kali kolom baru bisa muat, karena mencoba MENGISI baris dengan kolom sebanyak mungkin. Kolom yang baru ditambahkan dapat dan mungkin kosong, tetapi kolom tersebut akan tetap menempati ruang yang ditentukan dalam baris
+       jadi dengan autofill otomatis mengisi kolom2 sbebanyak mungkin kekanan 
+       
+       jadi begini kita buat atuto fill ini utk mmpersiapkan col2 agar col
+       tsb masuk ke settingan auto fill sbb dimislakan kita gak tahu mis kita dapat data dari server
+       trus mau kita masukan render ke kolom2 kita jadi mis buat 3 1fr nah 3 dibahwanya akan trusimplicit sbanyak data yg masuk secara otomatsi kira2 begitulah kegunaan 
+       auto fill tsb !
+       trus kita absenkan template rowsnya agar data masuk akan fill ke baris berikutnya 
+        contoh dibawah ini kita buat 200px beasr kol nah auto-fill  jadi akan 
+        isi rows pertama dgn col sbanyak munkin smapi mentok baru tus kebawah 
+        jika penuk ( implicit col disediakan otomatis begtulah guna auto fill )
+
+        -jadi pada saat layar lebatskli max diakan mengisi baris penuh  baris jika kol2 udah maks dan col akan mengisi ke implicit col dibawahnya otomatis 
+        -pada saat layar kcil smpit maka otomatis tersusun janya 2-3 col saja trgantng 
+        dari banyak content cell pada html yg dibuaat atau data yg masuk 
+        trus kebawah menambah baris2 nya secara otomtis sd slainya data masuk 
+        jadi itu gunanya dari auto-fill
+
+      */
+      .container {
+        min-height: 100vh;
+        display: grid;
+        /* contoh penjelasan diatas dgn  */
+        grid-template-columns: repeat(auto-fill, 200px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cell cell-1">cell-1</div>
+      <div class="cell cell-2">cell-2</div>
+      <div class="cell cell-3">cell-3</div>
+      <div class="cell cell-4">cell-4</div>
+      <div class="cell cell-5">cell-5</div>
+      <div class="cell cell-6">cell-6</div>
+      <div class="cell cell-6">cell-7</div>
+      <div class="cell cell-6">cell-8</div>
+      <div class="cell cell-6">cell-9</div>
+    </div>
+  </body>
+</html>

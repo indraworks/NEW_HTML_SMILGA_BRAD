@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scle=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <title>Grid Tutorial</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Grid Tutorial</title>
+    <style>
+      /*
+       align self atau justify-selfadalaj pengaturan 
+       amsing2 individue cell thad content dirinya sdiri 
+       nah align-self dan justify-self berlaku pada level seting di cell
+       masing2 individu ,jadi stlah kita mis atur content/itmemsnya 
+       maka kita baru ke idndiivyd2 dbawahnya mislakan dibawah ini 
+       kit aatur align-items :center ; justify items center 
+       smua kotak cells pasti akan dtiengah2 baik col atau row pada content 
+       nah kmudian contoh cell-1 kita mau align-self end pasti di kwbawah 
+       naj kita mau cell-1 justify seldnya ke kanan ktia pake jsutify-self:end
+       lengkapnya ada di bawah !
+      */
+      .container {
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        /* col kita matikan  */
+        align-items: center;
+        justify-items: center;
+      }
+
+      .cell-1 {
+        justify-self: flex-end;
+        align-self: end;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cell cell-1">cell-1</div>
+      <div class="cell cell-2">cell-2</div>
+      <div class="cell cell-3">cell-3</div>
+      <div class="cell cell-4">cell-4</div>
+      <div class="cell cell-5">cell-5</div>
+      <div class="cell cell-6">cell-6</div>
+    </div>
+  </body>
+</html>

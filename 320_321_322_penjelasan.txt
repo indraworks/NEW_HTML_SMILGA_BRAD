@@ -1,0 +1,47 @@
+
+Referensi grid tricks:
+https://css-tricks.com/snippets/css/complete-guide-grid/#aa-special-units-functions
+
+align_items ,justify_items,align_self,justify_self
+
+jadi maksud items itu gimana ,jadi item ini terkait dari bidang masing2 cell2 individu itu sdiri
+contentnya si cell,
+jadi ktika kita ubah utk align_items berarti si cells akan dibuatkan ruang2 gap 
+ini tergantung dari template pembuatan grid kita ya?
+ingat ! misalkan kita buat di container sbb:
+
+.container {
+    display:grid;
+    grid_template_columns:repeat(3,1fr); --->ada 3 items utk pengautran arah bidan datar utk col (kiri-kana)
+    grid_template_rows:repeat(2,100px ) ---> ada 2 items utk pengaturan align-items (arah bid tinggi utk row)
+    nah skarang kita mau ngeset tuk row items misalkan
+    align-items:center ; maka  kedua baris ini akan dibuatkan 2 gap atas dan bawah 
+                         rows 1 utk item 1 akan ada ditengah  dgn cell1,cell2,cell3 ( gab cells ini 1 items smua)
+                         rows 2 utk item 2 akan di akan dibuatkan dua baris atas dan bawah 
+
+
+      jadi skelai lagi items itu numjuk pada cols dan rows brapa banyak  individe cols dan rows tsb  berdasarkan dari pengaturanya apakah mau diatur align items -->utk row itemsnya ,atau mau diatur dgn justify-items utk col-itemsnya   
+      contoh gambar pengaturan utk justify-items ( col )  --ada 3 fr berarti ada 3 items contents!
+
+ justify-items utk content columns pengaturan ada:(arah horisontal)
+ start--->
+ end-->
+ center-->
+ strecth-->
+
+alignt-items utk contents rows pengaturan sama ( arah vertical)
+ start--->
+ end-->
+ center-->
+ strecth-->
+}
+
+SELF////
+utk self ini adlah pengaturan per-individue2 cell2 dimasing bidang contentnya 
+
+self --->baik justify-self atau alig-self( atas-bawah rows per indiviude cells itu sendiri di masing2  bidang contentnya )
+
+
+
+
+

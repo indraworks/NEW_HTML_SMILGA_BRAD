@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scle=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <title>Grid Tutorial</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Grid Tutorial</title>
+    <style>
+      /*
+      utk acuan css grid tricks : https://css-tricks.com/snippets/css/complete-guide-grid/
+      align-content untuk atur row!
+      jadi kalau row berarti mengatur atas -bawahnya dan space2 yg ada dlm wraper/container.
+      align-content makdsudnya gimana ini  utk mensetup
+      psosi2 row cel2 waktu kita gunakan grid
+      jadi mis
+      align-content:start //maka smua content dari row cell2 trbngkus wraper cotnainer
+      ada di sebelah atas  dari dlm counterner
+      align-content :end //smua content row 1,2,3  dan bawahnya kalren implicit row
+                         akan ada di sebelah bawahnya dari baris
+      align-content: space-evenly :akan ada space antar row bagi cell1..6  spanjang bidang tinggi  container yg terbagi sama rata smacam gap di row dan smua gap sama besarnya 
+
+      align-content :spape-around :akan ada space antar atas ditepi atas utk row 1 dan row 6 pling bawah 
+      dan space gap ini 1/2 dari space2 yg ada diantara gap2 cell2,cell-3,cell-4,cell-5
+      align-content :space-between :akan ada space antar atas dngn row 1,dan row 6 paling bawah dia mengisi tepi paling atas dan paling bawah ,stlahnya da gap utk cell 2,3,4,5
+       gap selang-seling sama besar .
+      ,
+
+
+      */
+      .container {
+        min-height: 100vh;
+        display: grid;
+        grid-template-rows: repeat(3, 100px);
+        /* col kita matikan  */
+
+        /* align-content: flex-start; */
+        /* align-content: flex-end; */
+        /* align-content: space-around; */
+        /* align-content: space-between; */
+        /* align-content: space-evenly; */
+      }
+
+      /* .cell-1 {
+        order: 3;
+      }
+      .cell-2 {
+        order: -2;
+      }
+      .cell-3 {
+        order: -5;
+      }
+      .cell-4 {
+        order: 2;
+      }
+      .cell-5 {
+        order: 1;
+      }
+      .cell-6 {
+        order: -3;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cell cell-1">cell-1</div>
+      <div class="cell cell-2">cell-2</div>
+      <div class="cell cell-3">cell-3</div>
+      <div class="cell cell-4">cell-4</div>
+      <div class="cell cell-5">cell-5</div>
+      <div class="cell cell-6">cell-6</div>
+    </div>
+  </body>
+</html>

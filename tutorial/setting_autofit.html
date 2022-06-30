@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scle=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <title>Grid Tutorial</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Grid Tutorial</title>
+    <style>
+      /* AUTO-FIT maksudnya apa?
+        autofit akan menyesuaikan dengan layar dan auto fit ini tidak menyediakan ruang2
+        dan auto fit dia akan strect fit pada layar sedangnakn auto-fill tidak dia hanya menyediakan sesuai dgn ukuranya ,
+        kita bisa buat perbedaan antara keduanya 
+        autofit dan auto fll
+        100vh dihapus dulu biar fit masuk 
+        nah kita baut minmax(200px,1fr )
+        minimum px yg ada 200px jika dilayar terkecil maksimumnya hanya 1 fr dalam 1 layar jika dia ada di layar trkecil nah bedanya apa ??
+        dari gambar jika layar dibesarkan max
+        auto-fit: cell-1 sd cell-7 ngembang atau strecth fit pada halaman dan jadinya pecell besar 290.47px ikutin besar layar 
+
+        -auto-fill: tetap maksimum 200px tidak berubah 
+
+        jika dikecilkan: akan sama2 mengisi kolom2 dibaris berikutnya yg sesuia besar layar
+        perbedaan ada pada layar lebar saja !
+
+        trus gimana kalau 1 cell 
+        jika 1 cell terlihat auto-fit cellnya ngisi penuh 1 rows kiri kanan 
+        dan 1 cell auto-fill tetap di 200px 
+        bisa dilihat pada gamnar
+
+        perbedaan bisa dilihat pada link berikut ini:
+        https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/
+
+      */
+      .container {
+        /* min-height: 100vh; */
+        display: grid;
+        /* contoh penjelasan diatas dgn  */
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      }
+      .container-1 {
+        /* min-height: 100vh; */
+        display: grid;
+        /* contoh penjelasan diatas dgn  */
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      }
+    </style>
+  </head>
+  <body>
+    <h2>auto-fit</h2>
+    <div class="container">
+      <div class="cell cell-1">cell-1</div>
+      <!-- <div class="cell cell-2">cell-2</div>
+      <div class="cell cell-3">cell-3</div>
+      <div class="cell cell-4">cell-4</div>
+      <div class="cell cell-5">cell-5</div>
+      <div class="cell cell-6">cell-6</div>
+      <div class="cell cell-7">cell-7</div> -->
+    </div>
+    <h2>auto-fill</h2>
+    <div class="container-1">
+      <div class="cell cell-1">cell-1</div>
+      <!-- <div class="cell cell-2">cell-2</div>
+      <div class="cell cell-3">cell-3</div>
+      <div class="cell cell-4">cell-4</div>
+      <div class="cell cell-5">cell-5</div>
+      <div class="cell cell-6">cell-6</div>
+      <div class="cell cell-7">cell-7</div> -->
+    </div>
+  </body>
+</html>
